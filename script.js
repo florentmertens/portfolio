@@ -121,12 +121,23 @@ const div = document.querySelector("#aboutMe");
 window.addEventListener("scroll", () => {
   if (window.scrollY >= div.getBoundingClientRect().y) {
     const arrayProgressLine = document.querySelectorAll(".progress-line span");
-    arrayProgressLine[0].style.animation = "progress-animation-85 5s forwards";
-    arrayProgressLine[1].style.animation = "progress-animation-65 5s forwards";
-    arrayProgressLine[2].style.animation = "progress-animation-75 5s forwards";
-    arrayProgressLine[3].style.animation = "progress-animation-70 5s forwards";
-    arrayProgressLine[4].style.animation = "progress-animation-75 5s forwards";
-    arrayProgressLine[5].style.animation = "progress-animation-75 5s forwards";
+    arrayProgressLine.forEach((line) => {
+      if (line.className == "75") {
+        line.style.animation = "progress-animation-75 5s forwards";
+      }
+      if (line.className == "70") {
+        line.style.animation = "progress-animation-70 5s forwards";
+      }
+      if (line.className == "65") {
+        line.style.animation = "progress-animation-65 5s forwards";
+      }
+      if (line.className == "60") {
+        line.style.animation = "progress-animation-60 5s forwards";
+      }
+      if (line.className == "55") {
+        line.style.animation = "progress-animation-55 5s forwards";
+      }
+    });
   }
 });
 

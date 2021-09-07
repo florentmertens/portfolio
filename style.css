@@ -30,6 +30,7 @@ body {
 .section:not(#contact) {
   min-height: 100%;
   padding-top: min(80px, 15vh);
+  padding-bottom: 50px;
 }
 
 h1,
@@ -303,15 +304,6 @@ nav ul li a.active {
   border-radius: 10px;
 }
 
-@keyframes progress-animation-85 {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 85%;
-  }
-}
-
 @keyframes progress-animation-75 {
   0% {
     width: 0%;
@@ -336,6 +328,24 @@ nav ul li a.active {
   }
   100% {
     width: 65%;
+  }
+}
+
+@keyframes progress-animation-60 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes progress-animation-55 {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 55%;
   }
 }
 
@@ -413,6 +423,14 @@ nav ul li a.active {
   font-size: 1rem;
 }
 
+.work p {
+  line-height: 1.8;
+}
+
+.work hr {
+  color: #5f5f5f;
+}
+
 /* END MY PROFESSIONAL EXPERIENCES */
 
 /* MY DIPLOMAS */
@@ -431,6 +449,10 @@ nav ul li a.active {
   margin-bottom: 50px;
   display: grid;
   grid-template-columns: 30% 10% 60%;
+}
+
+.diplomas div p {
+  line-height: 2;
 }
 
 .diplomas div:nth-child(1) h3 {
@@ -601,6 +623,11 @@ footer a:hover {
 
   .mobileMenu {
     display: flex;
+  }
+
+  .section:not(#contact) {
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   #aboutMe {
