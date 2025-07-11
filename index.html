@@ -1,259 +1,254 @@
 <!DOCTYPE html>
 <html lang="fr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Florent MERTENS</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600,700' rel='stylesheet' type='text/css'>
-</head>
-
-<body>
-  <!-- NAVIGATION BAR MOBILE -->
-  <div class="mobileMenu">
-    <button class="hamburger">
-      <div class="bar"></div>
-    </button>
-    <nav class="mobileNavBar">
-      <ul>
-        <li><a href="#home">ACCEUIL</a></li>
-        <li><a href="#aboutMe">PROFIL/COMPETENCES</a></li>
-        <li><a href="#workExperiences">EXPERIENCES PROFESSIONNELLES</a></li>
-        <li><a href="#myDiplomas">DIPLOMES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-  </div>
-  <!-- END NAVIGATION BAR MOBILE -->
-  <header>
-    <!-- NAVIGATION BAR -->
-    <nav class="defaultNavBar">
-      <ul>
-        <li><a href="#home">ACCEUIL</a></li>
-        <li><a href="#aboutMe">PROFIL/COMPETENCES</a></li>
-        <li><a href="#workExperiences">EXPERIENCES PROFESSIONNELLES</a></li>
-        <li><a href="#myDiplomas">DIPLOMES</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </nav>
-    <!-- END NAVIGATION BAR -->
-  </header>
-  <!-- HOME -->
-  <div id="home" class="section">
-    <div id="intro">
-      <h1>FLORENT MERTENS</h1>
-      <h2>DEVELOPPEUR WEB ET WEB MOBILE</h2>
-      <p>Bonjour, je suis <strong>développeur web et web mobile Front-end</strong> et <strong>Back-end</strong>
-        et voici mon portfolio.</p>
-      <a href="#aboutMe">Let's Begin</a>
-      <div id="icons">
-        <a href="https://www.linkedin.com/in/florent-mertens-593619134/" target="_blank"><i
-            class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/florentmertens/portfolio" target="_blank"><i class="fab fa-github"></i></a>
-      </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Florent Mertens | Développeur Web Full Stack</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/2cd317b115.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1 class="header-title">FLORENT MERTENS</h1>
+        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <nav>
+          <ul class="nav-list">
+            <li>
+              <a href="#projects" class="nav-link">Projets</a>
+            </li>
+            <li>
+              <a href="#about" class="nav-link">À propos</a>
+            </li>
+            <li>
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="intro">
+          <div class="intro-container">
+            <h1 class="intro-title">
+              Je suis
+              <span class="intro-highlight">Florent Mertens</span> développeur
+              web.
+            </h1>
+            <p class="intro-description">
+              Développeur full stack basé dans la métropole lilloise, passionné
+              par la création de sites accessibles et intuitifs.
+            </p>
+            <div class="intro-action">
+              <button type="button" class="intro-button">
+                ME CONTACTER <i class="fa-solid fa-circle fa-2xs"></i>
+              </button>
+              <div class="intro-icons">
+                <i class="fa-brands fa-linkedin-in"
+                  ><a href="#" target="_blank" aria-label="LinkedIn"></a
+                ></i>
+                <i class="fa-brands fa-github"
+                  ><a href="#" target="_blank" aria-label="GitHub"></a
+                ></i>
+              </div>
+            </div>
+          </div>
+          <div class="img-intro">
+            <img
+              src="images/photo-profil.jpg"
+              alt="Photo de profil de Florent Mertens"
+            />
+          </div>
+        </section>
+        <section id="projects">
+          <div class="projects-intro">
+            <h1 class="projects-title">Mes projets</h1>
+            <p class="projects-subtitle">
+              Voici quelques-uns des projets qui illustrent ma passion pour le
+              développement front-end.
+            </p>
+          </div>
+          <div class="projects-container">
+            <div class="project-card">
+              <h1 class="project-title">Nom du projet</h1>
+              <p class="project-tech">HTML / CSS / JS</p>
+              <img
+                src="images/16.jpg"
+                alt="Image du projet"
+                height="100px"
+                class="project-img"
+              />
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+                sapiente aliquam, perspiciatis officiis doloribus maiores
+                numquam a ratione omnis quos harum consequuntur expedita! Quia
+                dolore illum accusamus ipsam aperiam debitis?
+              </p>
+              <a href="#" target="_blank" class="project-link"
+                >GitHub<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="project-card">
+              <h1 class="project-title">Nom du projet</h1>
+              <p class="project-tech">HTML / CSS / JS</p>
+              <img
+                src="images/16.jpg"
+                alt="Image du projet"
+                height="100px"
+                class="project-img"
+              />
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+                sapiente aliquam, perspiciatis officiis doloribus maiores
+                numquam a ratione omnis quos harum consequuntur expedita! Quia
+                dolore illum accusamus ipsam aperiam debitis?
+              </p>
+              <a href="#" target="_blank" class="project-link"
+                >GitHub<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="project-card">
+              <h1 class="project-title">Nom du projet</h1>
+              <p class="project-tech">HTML / CSS / JS</p>
+              <img
+                src="images/16.jpg"
+                alt="Image du projet"
+                height="100px"
+                class="project-img"
+              />
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+                sapiente aliquam, perspiciatis officiis doloribus maiores
+                numquam a ratione omnis quos harum consequuntur expedita! Quia
+                dolore illum accusamus ipsam aperiam debitis?
+              </p>
+              <a href="#" target="_blank" class="project-link"
+                >GitHub<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="project-card">
+              <h1 class="project-title">Nom du projet</h1>
+              <p class="project-tech">HTML / CSS / JS</p>
+              <img
+                src="images/16.jpg"
+                alt="Image du projet"
+                height="100px"
+                class="project-img"
+              />
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+                sapiente aliquam, perspiciatis officiis doloribus maiores
+                numquam a ratione omnis quos harum consequuntur expedita! Quia
+                dolore illum accusamus ipsam aperiam debitis?
+              </p>
+              <a href="#" target="_blank" class="project-link"
+                >GitHub<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <div class="project-card">
+              <h1 class="project-title">Nom du projet</h1>
+              <p class="project-tech">HTML / CSS / JS</p>
+              <img
+                src="images/16.jpg"
+                alt="Image du projet"
+                height="100px"
+                class="project-img"
+              />
+              <p class="project-description">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus
+                sapiente aliquam, perspiciatis officiis doloribus maiores
+                numquam a ratione omnis quos harum consequuntur expedita! Quia
+                dolore illum accusamus ipsam aperiam debitis?
+              </p>
+              <a href="#" target="_blank" class="project-link"
+                >GitHub<i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+          </div>
+        </section>
+        <section id="about">
+          <h1 class="about-title">À propos de moi</h1>
+          <div class="about-container">
+            <p class="about-title-description">
+              Je suis un <span>développeur web</span> basé à Marcq-en-baroeul
+            </p>
+            <p class="about-description">
+              Je m’appelle Florent MERTENS, j’ai 27 ans. Passionné par
+              l’informatique depuis l’enfance, j’ai toujours été attiré par les
+              rouages invisibles du web, ce qui le fait fonctionner derrière le
+              décor. J’ai obtenu le Titre professionnel de niveau 5 de
+              Développeur Web et Web mobile, avec une préférence affirmée pour
+              le développement back-end. Structurer les données, concevoir des
+              architectures solides, optimiser les performances ou sécuriser des
+              flux font partie des missions qui me stimulent. Aujourd’hui, je
+              suis à la recherche d’un poste où je pourrai mettre mes
+              compétences techniques au service de projets exigeants et
+              collaborer avec une équipe partageant la même passion pour le code
+              bien pensé.
+            </p>
+          </div>
+        </section>
+        <section id="contact">
+          <div class="contact-info">
+            <h1 class="contact-title">Contactez-moi</h1>
+            <p>
+              Envoyez-moi un message à :
+              <a href="mailto:mertens.florent00@gmail.com" class="contact-link"
+                >mertens.florent00@gmail.com</a
+              ><br />
+              Pour en savoir plus, voici
+              <a
+                href="images/CV_FLORENT_MERTENS.pdf"
+                target="_blank"
+                class="contact-link"
+                >mon CV</a
+              >
+            </p>
+            <div class="contact-socials">
+              <i class="fa-brands fa-linkedin-in"
+                ><a href="#" target="_blank" aria-label="LinkedIn"></a
+              ></i>
+              <i class="fa-brands fa-github"
+                ><a href="#" target="_blank" aria-label="GitHub"></a
+              ></i>
+            </div>
+          </div>
+          <form action="" id="contact-form">
+            <label for="contact-name" class="contact-label">Nom</label>
+            <input
+              type="text"
+              name="nom"
+              id="contact-name"
+              class="contact-input"
+            />
+            <label for="contact-email" class="contact-label">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="contact-email"
+              class="contact-input"
+            />
+            <label for="contact-subject" class="contact-label">Sujet</label>
+            <input
+              type="text"
+              name="subject"
+              id="contact-subject"
+              class="contact-input"
+            />
+            <label for="contact-message" class="contact-label">Message</label>
+            <textarea
+              name="message"
+              id="contact-message"
+              class="contact-textarea"
+            ></textarea>
+            <button type="submit" class="contact-submit-button">Envoyer</button>
+          </form>
+        </section>
+      </main>
     </div>
-  </div>
-  <!-- END HOME -->
-  <!-- ABOUT ME -->
-  <div id="aboutMe" class="section">
-    <!-- MY PROFILE -->
-    <div id="profile">
-      <h1>MON <strong>PROFIL</strong></h1>
-      <div class="profileInfo">
-        <h2>Nom complet</h2>
-        <p>Florent Mertens</p>
-      </div>
-      <div class="profileInfo">
-        <h2>Date de naissance</h2>
-        <p>14 Février 1998</p>
-      </div>
-      <div class="profileInfo">
-        <h2>Ville</h2>
-        <p>Marcq-en-Barœul</p>
-      </div>
-      <div class="profileInfo">
-        <h2>Travail</h2>
-        <p>Développeur web & web mobile</p>
-      </div>
-      <div class="profileInfo">
-        <h2>Années d’expérience</h2>
-        <p id="yearsExperience">2020/08/24</p>
-      </div>
-    </div>
-    <!-- END MY PROFILE -->
-    <!-- MY SKILLS -->
-    <div id="skills">
-      <h1>MES <strong>COMPETENCES</strong></h1>
-      <div class="skillBar">
-        <h2>JAVASCRIPT</h2>
-        <div class="progress-line"><span class="70"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>PHP</h2>
-        <div class="progress-line"><span class="65"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>SQL</h2>
-        <div class="progress-line"><span class="65"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>HTML5</h2>
-        <div class="progress-line"><span class="75"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>CSS3</h2>
-        <div class="progress-line"><span class="60"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>REACT.JS</h2>
-        <div class="progress-line"><span class="65"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>PHP SYMFONY</h2>
-        <div class="progress-line"><span class="55"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>BOOTSTRAP</h2>
-        <div class="progress-line"><span class="60"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>REST API</h2>
-        <div class="progress-line"><span class="55"></span></div>
-      </div>
-      <div class="skillBar">
-        <h2>JQUERY</h2>
-        <div class="progress-line"><span class="60"></span></div>
-      </div>
-    </div>
-    <!-- END MY SKILLS -->
-    <!-- DOWNLOAD CV -->
-    <div id="downloadCV">
-      <a href="images/CV_FLORENT_MERTENS.pdf" target="_blank">Télécharger CV</a>
-    </div>
-    <!-- END DOWNLOAD CV -->
-  </div>
-  <!-- END ABOUT ME -->
-  <!-- RESUME -->
-  <!-- MY PROFESSIONAL EXPERIENCES  -->
-  <div id="workExperiences" class="section">
-    <h1>MES <strong>EXPERIENCES PROFESSIONNELLES</strong></h1>
-    <div id="works">
-      <div class="work">
-        <a href="https://insy2s.com/" target="_blank">
-          <img src="images/insy2s_logo.png" alt="">
-        </a>
-        <h2>DEVELOPPEUR FRONT-END REATC.JS</h2>
-        <P>Développer une application web dynamique et adaptable en
-          utilisant la librairie React.js. <br>
-          Réaliser des maquettes. <br>
-          Utilisation de la librairie AXIOS pour communiquer avec une
-          API et effectuer des requêtes. <br>
-          Utilisation des librairies Formik et YUP pour la gestion des
-          formulaires.
-        </P>
-      </div>
-      <div class="work">
-        <a href="http://tcconcept.fr/" target="_blank">
-          <img src="images/tc_concept_logo.png" alt="" id="logoTc">
-        </a>
-        <h2>TECHNICO-COMMERCIAL</h2>
-        <P>Gestion portefeuille client.<br>
-          Réalisation et négociation de devis, commandes.<br>
-          Prospection.<br>
-          Gestion du magasin (emporté).<br>
-          Organisation tournée de livraison.<br>
-          Suivi des commandes.
-        </P>
-      </div>
-    </div>
-  </div>
-  <!-- END MY PROFESSIONAL EXPERIENCES -->
-  <!-- MY DIPLOMAS -->
-  <div id="myDiplomas" class="section">
-    <h1>MES <strong>DIPLOMES</strong></h1>
-    <div class="diplomas">
-      <div>
-        <h3>Titre professionnel de niveau 5 (BTS/DUT) de développeur Web et Web mobile</h3>
-        <p>Août 2020 - Mai 2021</p>
-      </div>
-      <div>
-        <i class="fas fa-graduation-cap"></i>
-        <span></span>
-      </div>
-      <div>
-        <h3>AFPA</h3>
-        <span></span>
-        <p>Le développeur web est chargé de la conception et du développement technique de nouvelles applications web ou
-          web mobiles en partenariat avec les équipes techniques. Il est un programmateur capable de s’adapter aux
-          différents langages et taches du site.</p>
-      </div>
-    </div>
-    <div class="diplomas">
-      <div>
-        <h3>BTS Technico-commercial</h3>
-        <p>Septembre 2016 - Juin 2018</p>
-      </div>
-      <div>
-        <i class="fas fa-graduation-cap"></i>
-        <span></span>
-      </div>
-      <div>
-        <h3>Lycée Gaston Berger</h3>
-        <span></span>
-        <p>Forme de futurs négociateurs, vendeurs, technico-commerciaux, chargés de
-          clientèle, ils seront capables de conseiller les clients, tout en élaborant et en présentant une solution
-          technique, commerciale et financière, adaptée à chaque situation.</p>
-      </div>
-    </div>
-    <div class="diplomas">
-      <div>
-        <h3>BAC Technicien en installation des systèmes énergétiques et climatiques</h3>
-        <p>Septembre 2013 - Juin 2016</p>
-      </div>
-      <div>
-        <i class="fas fa-graduation-cap"></i>
-        <span id="lastSpan"></span>
-      </div>
-      <div>
-        <h3>Lycée Maurice Duhamel</h3>
-        <span></span>
-        <p>Forme des techniciens chargés d’installer des équipements thermiques, climatiques et sanitaires (appareil
-          sanitaire, climatisation individuelle ou collective, chaudière, pompe à chaleur..).</p>
-      </div>
-    </div>
-  </div>
-  <!-- END MY DIPLOMAS -->
-  <!-- END RESUME -->
-  <!-- CONTACT -->
-  <div id="contact" class="section">
-    <div class="contactMe">
-      <a href="mailto:mertens.florent00@gmail.com">
-        <i class="far fa-envelope"></i>
-        <div>MON <strong>EMAIL</strong></div>
-        mertens.florent00@gmail.com
-      </a>
-    </div>
-    <div class="contactMe">
-      <a href="tel:+33613621223">
-        <i class="fas fa-phone-alt"></i>
-        <div>MON <strong>NUMERO DE TELEPHONE</strong></div>
-        06.13.62.12.23
-      </a>
-    </div>
-  </div>
-  <!-- END CONTACT -->
-  <!-- FOOTER -->
-  <footer>
-    <p>Design by <a href="https://www.styleshout.com/demo/?theme=kards" target="_blank">styleshout</a> and <a
-        href="https://templatemo.com/live/templatemo_464_ultra_profile" target="_blank">template mo</a>
-    </p>
-  </footer>
-  <!-- END FOOTER -->
-  <script type="text/javascript" src="script.js"></script>
-</body>
-
+  </body>
 </html>
