@@ -9,13 +9,18 @@
       src="https://kit.fontawesome.com/2cd317b115.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
   </head>
   <body>
     <div class="wrapper">
       <header>
         <h1 class="header-title">FLORENT MERTENS</h1>
-        <button class="hamburger" aria-label="Menu" aria-expanded="false">
+        <button class="hamburger" aria-label="Menu">
           <i class="fa-solid fa-bars"></i>
+          <i class="fa-solid fa-xmark"></i>
         </button>
         <nav>
           <ul class="nav-list">
@@ -44,16 +49,24 @@
               par la création de sites accessibles et intuitifs.
             </p>
             <div class="intro-action">
-              <button type="button" class="intro-button">
-                ME CONTACTER <i class="fa-solid fa-circle fa-2xs"></i>
-              </button>
+              <a href="#contact">
+                <button type="button" class="intro-button">
+                  ME CONTACTER <i class="fa-solid fa-circle fa-2xs"></i>
+                </button>
+              </a>
               <div class="intro-icons">
-                <i class="fa-brands fa-linkedin-in"
-                  ><a href="#" target="_blank" aria-label="LinkedIn"></a
-                ></i>
-                <i class="fa-brands fa-github"
-                  ><a href="#" target="_blank" aria-label="GitHub"></a
-                ></i>
+                <a
+                  href="https://www.linkedin.com/in/florent-mertens-593619134/"
+                  target="_blank"
+                  aria-label="LinkedIn"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a
+                  href="https://github.com/florentmertens"
+                  target="_blank"
+                  aria-label="GitHub"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
@@ -69,7 +82,7 @@
             <h1 class="projects-title">Mes projets</h1>
             <p class="projects-subtitle">
               Voici quelques-uns des projets qui illustrent ma passion pour le
-              développement front-end.
+              développement web.
             </p>
           </div>
           <div class="projects-container">
@@ -185,7 +198,7 @@
               le développement back-end. Structurer les données, concevoir des
               architectures solides, optimiser les performances ou sécuriser des
               flux font partie des missions qui me stimulent. Aujourd’hui, je
-              suis à la recherche d’un poste où je pourrai mettre mes
+              suis à la recherche d’un poste dans lequel je pourrai mettre mes
               compétences techniques au service de projets exigeants et
               collaborer avec une équipe partageant la même passion pour le code
               bien pensé.
@@ -209,21 +222,29 @@
               >
             </p>
             <div class="contact-socials">
-              <i class="fa-brands fa-linkedin-in"
-                ><a href="#" target="_blank" aria-label="LinkedIn"></a
-              ></i>
-              <i class="fa-brands fa-github"
-                ><a href="#" target="_blank" aria-label="GitHub"></a
-              ></i>
+              <a
+                href="https://www.linkedin.com/in/florent-mertens-593619134/"
+                target="_blank"
+                aria-label="LinkedIn"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a
+                href="https://github.com/florentmertens"
+                target="_blank"
+                aria-label="GitHub"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
           </div>
-          <form action="" id="contact-form">
+          <form id="contact-form">
+            <input type="text" name="_honey" style="display: none" />
             <label for="contact-name" class="contact-label">Nom</label>
             <input
               type="text"
-              name="nom"
+              name="name"
               id="contact-name"
               class="contact-input"
+              required
             />
             <label for="contact-email" class="contact-label">Email</label>
             <input
@@ -231,6 +252,7 @@
               name="email"
               id="contact-email"
               class="contact-input"
+              required
             />
             <label for="contact-subject" class="contact-label">Sujet</label>
             <input
@@ -238,17 +260,20 @@
               name="subject"
               id="contact-subject"
               class="contact-input"
+              required
             />
             <label for="contact-message" class="contact-label">Message</label>
             <textarea
               name="message"
               id="contact-message"
               class="contact-textarea"
+              required
             ></textarea>
             <button type="submit" class="contact-submit-button">Envoyer</button>
           </form>
         </section>
       </main>
     </div>
+    <script src="script.js" defer></script>
   </body>
 </html>

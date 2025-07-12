@@ -37,7 +37,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
   color: var(--text-white);
   position: sticky;
   padding: 20px 0;
@@ -63,7 +62,11 @@ header {
 
 .hamburger i {
   color: var(--text-white);
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  background-color: var(--bg-dark);
 }
 
 .nav-list {
@@ -121,6 +124,10 @@ section {
   height: 4rem;
 }
 
+.intro-action a {
+  height: 100%;
+}
+
 .intro-button {
   cursor: pointer;
   border: none;
@@ -134,6 +141,7 @@ section {
   line-height: 0;
   border: 2px solid var(--yellow);
   transition: var(--transition);
+  color: var(--bg-dark);
 }
 
 .intro-button:hover {
@@ -148,7 +156,7 @@ section {
   gap: 1rem;
 }
 
-.intro-icons > i {
+.intro-icons > a {
   background: var(--light-black);
   border-radius: 50%;
   height: 100%;
@@ -160,9 +168,10 @@ section {
   cursor: pointer;
   font-size: 1.25rem;
   transition: var(--transition);
+  text-decoration: none;
 }
 
-.intro-icons > i:hover {
+.intro-icons > a:hover {
   color: #0a0a0a;
   background: var(--yellow);
   transform: translateY(-3px);
@@ -373,6 +382,7 @@ section {
   border: 2px solid var(--yellow);
   width: fit-content;
   transition: var(--transition);
+  color: var(--bg-dark);
 }
 
 .contact-submit-button:hover {
@@ -395,10 +405,50 @@ section {
 
   .hamburger {
     display: flex;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .hamburger i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  }
+
+  .hamburger .fa-xmark {
+    opacity: 0;
+  }
+
+  .hamburger.open .fa-bars {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .hamburger.open .fa-xmark {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   nav {
-    display: none;
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 0 0 20px 20px;
+    transition: right 0.5s ease;
+  }
+
+  nav.open {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
   }
 
   #intro {
@@ -510,10 +560,50 @@ section {
 
   .hamburger {
     display: flex;
+    position: relative;
+    height: 2rem;
+    width: 2rem;
+  }
+
+  .hamburger i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease;
+  }
+
+  .hamburger .fa-xmark {
+    opacity: 0;
+  }
+
+  .hamburger.open .fa-bars {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(90deg);
+  }
+
+  .hamburger.open .fa-xmark {
+    opacity: 1;
+    transform: translate(-50%, -50%) rotate(0deg);
   }
 
   nav {
-    display: none;
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    width: 50%;
+    height: 50%;
+    border-radius: 0 0 20px 20px;
+    transition: right 0.5s ease;
+  }
+
+  nav.open {
+    right: 0;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
   }
 
   #intro {
